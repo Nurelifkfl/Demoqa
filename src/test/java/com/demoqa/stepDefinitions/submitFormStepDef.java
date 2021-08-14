@@ -23,13 +23,13 @@ public class submitFormStepDef {
     @Given("user is on the provided page")
     public void user_is_on_the_provided_page() {
         Driver.get().get(ConfigurationReader.get("url")+"/automation-practice-form");
-        System.out.println("user on the given url");
+
     }
 
     @When("user enter details")
     public void user_enter_details() {
-        browserUtils.waitForPageToLoad(6);
-        System.out.println("enter firstname");
+        browserUtils.waitForPageToLoad(5);
+
         WebElement firstName=Driver.get().findElement(By.id("firstName"));
         firstName.click();
         firstName.sendKeys("Emily");
@@ -83,7 +83,7 @@ public class submitFormStepDef {
         WebElement submit = Driver.get().findElement(By.cssSelector(".btn.btn-primary"));
         submit.click();
 
-        browserUtils.waitFor(5);
+        browserUtils.waitFor(3);
 
     }
 
