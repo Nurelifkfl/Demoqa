@@ -1,58 +1,60 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/first.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/hoverOver.feature");
 formatter.feature({
-  "name": "submitting form",
+  "name": "hover over",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@wip"
+      "name": "@hoverOver"
     }
   ]
 });
 formatter.scenario({
-  "name": "User should be able to submit information",
+  "name": "User should be able to hover over the button and the input field",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@wip"
+      "name": "@hoverOver"
     }
   ]
 });
 formatter.before({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "user is on the provided page",
+  "name": "user is on the tool-tips page",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_is_on_the_provided_page()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "user enter details",
+  "name": "user hover over the button",
   "keyword": "When "
 });
-formatter.match({
-  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_enter_details()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "user should be able to submit form",
+  "name": "user hover over the field",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user should be able to hover over successfully",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_should_be_able_to_submit_form()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.after({
-  "status": "passed"
+  "status": "skipped"
 });
 });
