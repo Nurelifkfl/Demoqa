@@ -22,7 +22,7 @@ public class submitFormStepDef {
 
     @Given("user is on the provided page")
     public void user_is_on_the_provided_page() {
-        Driver.get().get(ConfigurationReader.get("url"));
+        Driver.get().get(ConfigurationReader.get("url")+"/automation-practice-form");
         System.out.println("user on the given url");
     }
 
@@ -53,13 +53,19 @@ public class submitFormStepDef {
         hobbies.click();
 
         WebElement chooseFile=Driver.get().findElement(By.xpath("//input[@class='form-control-file']"));
-        chooseFile.sendKeys("/Users/nurelifkafali/Desktop/d.jpg");
+        chooseFile.sendKeys(System.getProperty("user.dir")+"/src/test/resources/d.jpg");
 
 
         browserUtils.waitFor(3);
 
         WebElement currentAddress=Driver.get().findElement(By.xpath("//*[@id='currentAddress']"));
-        currentAddress.click();
+
+        JavascriptExecutor js = (JavascriptExecutor) Driver.get();
+        js.executeScript("arguments[0].scrollIntoView();",currentAddress);
+
+
+
+         currentAddress.click();
         currentAddress.sendKeys("12 Drawn Way");
 
         browserUtils.waitFor(3);
@@ -72,12 +78,6 @@ public class submitFormStepDef {
 
         Driver.get().findElement(By.xpath("(//*[@class='css-1g6gooi']//div//input)[2]")).sendKeys("Haryana", Keys.ENTER);
         Driver.get().findElement(By.xpath("(//*[@class='css-1g6gooi']//div//input)[3]")).sendKeys("Karnal",Keys.ENTER);
-
-//        stateDropDown.get(0).click();
-//        browserUtils.waitFor(5);
-//
-//        List<WebElement> cityDropDown = Driver.get().findElements(By.xpath("(//*[@class='css-19bqh2r'])[2]"));
-//        cityDropDown.get(1).click();
 
 
         WebElement submit = Driver.get().findElement(By.cssSelector(".btn.btn-primary"));
@@ -92,8 +92,7 @@ public class submitFormStepDef {
 
 
         String expected="Thanks for submitting the form";
-        WebElement actual = Driver.get().findElement( By.linkText("Thanks for submitting the form"));
-
+        String actual = Driver.get().findElement( By.className("modal-header")).getText();
         Assert.assertEquals(expected,actual);
     }
 
