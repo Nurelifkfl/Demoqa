@@ -20,41 +20,49 @@ formatter.scenario({
   ]
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user is on the tool-tips page",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.demoqa.stepDefinitions.hoverOverStepDef.user_is_on_the_tool_tips_page()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "user hover over the button",
   "keyword": "When "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.demoqa.stepDefinitions.hoverOverStepDef.user_hover_over_the_button()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "user hover over the field",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.demoqa.stepDefinitions.hoverOverStepDef.user_hover_over_the_field()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "user should be able to hover over successfully",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.demoqa.stepDefinitions.hoverOverStepDef.user_should_be_able_to_hover_over_successfully()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.after({
-  "status": "skipped"
+  "status": "passed"
 });
 });
