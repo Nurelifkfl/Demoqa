@@ -9,6 +9,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -51,11 +53,11 @@ public class submitFormStepDef {
         hobbies.click();
 
         WebElement chooseFile=Driver.get().findElement(By.xpath("//input[@class='form-control-file']"));
-        chooseFile.click();
         chooseFile.sendKeys("/Users/nurelifkafali/Desktop/d.jpg");
 
 
         browserUtils.waitFor(3);
+
         WebElement currentAddress=Driver.get().findElement(By.xpath("//*[@id='currentAddress']"));
         currentAddress.click();
         currentAddress.sendKeys("12 Drawn Way");
@@ -63,34 +65,36 @@ public class submitFormStepDef {
         browserUtils.waitFor(3);
 
 
-        List<WebElement> stateDropDown = Driver.get().findElements(By.xpath("(//*[@class='css-19bqh2r'])[1]"));
-        for(WebElement option : stateDropDown) {
-            if (option.getText().equals("Haryana")) {
-                option.click();
-                System.out.println("option.getText() = " + option.getText());
-            }
-        }
 
+        WebElement stateDropDown = Driver.get().findElement(By.xpath("(//*[@class='css-19bqh2r'])[1]"));
+        browserUtils.scrollToElement(stateDropDown);
+        stateDropDown.click();
 
+        Driver.get().findElement(By.xpath("(//*[@class='css-1g6gooi']//div//input)[2]")).sendKeys("Haryana", Keys.ENTER);
+        Driver.get().findElement(By.xpath("(//*[@class='css-1g6gooi']//div//input)[3]")).sendKeys("Karnal",Keys.ENTER);
 
-
-//        List<WebElement> stateDropDown = Driver.get().findElements(By.xpath("(//*[@class='css-19bqh2r'])[1]"));
-//        System.out.println("stateDropDown.size() = " + stateDropDown.size());
-//
 //        stateDropDown.get(0).click();
 //        browserUtils.waitFor(5);
 //
 //        List<WebElement> cityDropDown = Driver.get().findElements(By.xpath("(//*[@class='css-19bqh2r'])[2]"));
 //        cityDropDown.get(1).click();
 
-browserUtils.waitFor(5);
 
-       // basePage.uploadPicture.sendKeys("//Nurelif/desktop/d.jpg");
+        WebElement submit = Driver.get().findElement(By.cssSelector(".btn.btn-primary"));
+        submit.click();
+
+        browserUtils.waitFor(5);
+
     }
 
     @Then("user should be able to submit form")
     public void user_should_be_able_to_submit_form() {
 
+
+        String expected="Thanks for submitting the form";
+        WebElement actual = Driver.get().findElement( By.linkText("Thanks for submitting the form"));
+
+        Assert.assertEquals(expected,actual);
     }
 
 
