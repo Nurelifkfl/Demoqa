@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-08-14T23:28:43.270Z",
+        "start_timestamp": "2021-08-14T23:41:46.091Z",
         "before": [
           {
             "result": {
-              "duration": 3901954000,
+              "duration": 3970693000,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 3,
-        "name": "User should be able to hover over the button and the input field",
+        "name": "User should be able to drag and drop the element",
         "description": "",
-        "id": "hover-over;user-should-be-able-to-hover-over-the-button-and-the-input-field",
+        "id": "drag-and-drop;user-should-be-able-to-drag-and-drop-the-element",
         "after": [
           {
             "result": {
-              "duration": 156247000,
+              "duration": 172289000,
               "status": "passed"
             },
             "match": {
@@ -35,68 +35,56 @@
         "steps": [
           {
             "result": {
-              "duration": 1188288000,
+              "duration": 1082615000,
               "status": "passed"
             },
             "line": 4,
-            "name": "user is on the tool-tips page",
+            "name": "user is on the droppable page",
             "match": {
-              "location": "com.demoqa.stepDefinitions.hoverOverStepDef.user_is_on_the_tool_tips_page()"
+              "location": "com.demoqa.stepDefinitions.dragAndDropStepDef.user_is_on_the_droppable_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3267998000,
+              "duration": 315952000,
               "status": "passed"
             },
             "line": 5,
-            "name": "user hover over the button",
+            "name": "user drag and drop the element into the specified area",
             "match": {
-              "location": "com.demoqa.stepDefinitions.hoverOverStepDef.user_hover_over_the_button()"
+              "location": "com.demoqa.stepDefinitions.dragAndDropStepDef.user_drag_and_drop_the_element_into_the_specified_area()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 166902000,
+              "duration": 638679000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user hover over the field",
+            "name": "user should be able to drag and drop successfully",
             "match": {
-              "location": "com.demoqa.stepDefinitions.hoverOverStepDef.user_hover_over_the_field()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 198061000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user should be able to hover over successfully",
-            "match": {
-              "location": "com.demoqa.stepDefinitions.hoverOverStepDef.user_should_be_able_to_hover_over_successfully()"
+              "location": "com.demoqa.stepDefinitions.dragAndDropStepDef.user_should_be_able_to_drag_and_drop_successfully()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@hoverOver"
+            "name": "@dragAndDrop"
           }
         ]
       }
     ],
-    "name": "hover over",
+    "name": "drag and drop",
     "description": "",
-    "id": "hover-over",
+    "id": "drag-and-drop",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/hoverOver.feature",
+    "uri": "file:src/test/resources/features/dragAndDrop.feature",
     "tags": [
       {
-        "name": "@hoverOver",
+        "name": "@dragAndDrop",
         "type": "Tag",
         "location": {
           "line": 1,

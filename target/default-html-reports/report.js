@@ -1,21 +1,21 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/hoverOver.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/dragAndDrop.feature");
 formatter.feature({
-  "name": "hover over",
+  "name": "drag and drop",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@hoverOver"
+      "name": "@dragAndDrop"
     }
   ]
 });
 formatter.scenario({
-  "name": "User should be able to hover over the button and the input field",
+  "name": "User should be able to drag and drop the element",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@hoverOver"
+      "name": "@dragAndDrop"
     }
   ]
 });
@@ -23,41 +23,31 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user is on the tool-tips page",
+  "name": "user is on the droppable page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.demoqa.stepDefinitions.hoverOverStepDef.user_is_on_the_tool_tips_page()"
+  "location": "com.demoqa.stepDefinitions.dragAndDropStepDef.user_is_on_the_droppable_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user hover over the button",
+  "name": "user drag and drop the element into the specified area",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.demoqa.stepDefinitions.hoverOverStepDef.user_hover_over_the_button()"
+  "location": "com.demoqa.stepDefinitions.dragAndDropStepDef.user_drag_and_drop_the_element_into_the_specified_area()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user hover over the field",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.demoqa.stepDefinitions.hoverOverStepDef.user_hover_over_the_field()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user should be able to hover over successfully",
+  "name": "user should be able to drag and drop successfully",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.demoqa.stepDefinitions.hoverOverStepDef.user_should_be_able_to_hover_over_successfully()"
+  "location": "com.demoqa.stepDefinitions.dragAndDropStepDef.user_should_be_able_to_drag_and_drop_successfully()"
 });
 formatter.result({
   "status": "passed"
