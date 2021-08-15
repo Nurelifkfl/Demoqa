@@ -20,8 +20,8 @@ public class BasePage {
     @FindBy(xpath = "//*[@id='userNumber']")
     public WebElement userNumber;
 
-//    @FindBy(id = "dateOfBirthInput")
-//    public WebElement dateOfBirth;
+    @FindBy(id = "dateOfBirthInput")
+    public WebElement dateOfBirth;
 
 
     @FindBy(xpath = "(//*[@class='custom-control-label'])[4]")

@@ -1,4 +1,4 @@
-@dragAndDrop
+@wip @dragAndDrop
 Feature: drag and drop
   Scenario: User should be able to drag and drop the element
     Given user is on the droppable page

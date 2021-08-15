@@ -1,4 +1,4 @@
-@datePicker
+@wip @datePicker
 Feature: date picker
   Scenario: User should be able to set the date from the date picker
     Given user is on the date-picker page

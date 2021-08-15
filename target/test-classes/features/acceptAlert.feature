@@ -1,4 +1,4 @@
-@alert
+@wip @alert
 Feature: accept alert
   Scenario: User should be able to accept alert
     Given user is on the alerts page

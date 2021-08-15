@@ -8,9 +8,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 
 public class modalsStepDef {
+
     @Given("user is on the modal-dialogs page")
     public void user_is_on_the_modal_dialogs_page() {
         Driver.get().get(ConfigurationReader.get("url")+"/modal-dialogs");
@@ -25,15 +27,20 @@ public class modalsStepDef {
     @Then("user should be able to close modal")
     public void user_should_be_able_to_close_modal() {
 
-        int windowCount = Driver.get().getWindowHandles().size();
         WebElement closeModal=Driver.get().findElement(By.id("closeSmallModal"));
 
         WebElement modalMessage=Driver.get().findElement(By.className("modal-body"));
         System.out.println("modalMessage.getText() = " + modalMessage.getText());
 
-        closeModal.click();
 
-        Assert.assertEquals(windowCount, Driver.get().getWindowHandles().size());
 
+
+        try {
+
+            closeModal.click();
+
+        } catch (NoSuchElementException e) {
+           Assert.assertFalse(closeModal.isDisplayed());
+        }
     }
 }

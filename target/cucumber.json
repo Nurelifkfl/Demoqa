@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-08-15T13:05:19.397Z",
+        "start_timestamp": "2021-08-15T19:39:32.043Z",
         "before": [
           {
             "result": {
-              "duration": 3132669000,
+              "duration": 2961151000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 120004000,
+              "duration": 183186000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1794850000,
+              "duration": 1476839000,
               "status": "passed"
             },
             "line": 4,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 5077956000,
+              "duration": 49493000,
               "status": "passed"
             },
             "line": 5,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 137309000,
+              "duration": 8010139000,
               "status": "passed"
             },
             "line": 6,
@@ -71,6 +71,9 @@
           }
         ],
         "tags": [
+          {
+            "name": "@wip"
+          },
           {
             "name": "@alert"
           }
@@ -84,11 +87,19 @@
     "uri": "file:src/test/resources/features/acceptAlert.feature",
     "tags": [
       {
-        "name": "@alert",
+        "name": "@wip",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "@alert",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 6
         }
       }
     ]
@@ -97,11 +108,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-08-15T13:05:29.694Z",
+        "start_timestamp": "2021-08-15T19:39:44.818Z",
         "before": [
           {
             "result": {
-              "duration": 2093760000,
+              "duration": 2056735000,
               "status": "passed"
             },
             "match": {
@@ -116,7 +127,7 @@
         "after": [
           {
             "result": {
-              "duration": 266513000,
+              "duration": 169423000,
               "status": "passed"
             },
             "match": {
@@ -129,7 +140,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1474703000,
+              "duration": 1061645000,
               "status": "passed"
             },
             "line": 4,
@@ -141,7 +152,7 @@
           },
           {
             "result": {
-              "duration": 3677288000,
+              "duration": 3501734000,
               "status": "passed"
             },
             "line": 5,
@@ -153,7 +164,7 @@
           },
           {
             "result": {
-              "duration": 989000,
+              "duration": 1245000,
               "status": "passed"
             },
             "line": 6,
@@ -165,6 +176,9 @@
           }
         ],
         "tags": [
+          {
+            "name": "@wip"
+          },
           {
             "name": "@datePicker"
           }
@@ -178,11 +192,19 @@
     "uri": "file:src/test/resources/features/datePicker.feature",
     "tags": [
       {
-        "name": "@datePicker",
+        "name": "@wip",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "@datePicker",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 6
         }
       }
     ]
@@ -191,11 +213,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-08-15T13:05:37.238Z",
+        "start_timestamp": "2021-08-15T19:39:51.639Z",
         "before": [
           {
             "result": {
-              "duration": 2144217000,
+              "duration": 1664141000,
               "status": "passed"
             },
             "match": {
@@ -210,7 +232,7 @@
         "after": [
           {
             "result": {
-              "duration": 131028000,
+              "duration": 108559000,
               "status": "passed"
             },
             "match": {
@@ -223,7 +245,7 @@
         "steps": [
           {
             "result": {
-              "duration": 998594000,
+              "duration": 1144072000,
               "status": "passed"
             },
             "line": 4,
@@ -235,7 +257,7 @@
           },
           {
             "result": {
-              "duration": 383056000,
+              "duration": 409061000,
               "status": "passed"
             },
             "line": 5,
@@ -247,7 +269,7 @@
           },
           {
             "result": {
-              "duration": 36389000,
+              "duration": 29176000,
               "status": "passed"
             },
             "line": 6,
@@ -259,6 +281,9 @@
           }
         ],
         "tags": [
+          {
+            "name": "@wip"
+          },
           {
             "name": "@dragAndDrop"
           }
@@ -272,11 +297,19 @@
     "uri": "file:src/test/resources/features/dragAndDrop.feature",
     "tags": [
       {
-        "name": "@dragAndDrop",
+        "name": "@wip",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "@dragAndDrop",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 6
         }
       }
     ]
@@ -285,11 +318,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-08-15T13:05:40.944Z",
+        "start_timestamp": "2021-08-15T19:39:55.008Z",
         "before": [
           {
             "result": {
-              "duration": 2211827000,
+              "duration": 1815263000,
               "status": "passed"
             },
             "match": {
@@ -304,7 +337,7 @@
         "after": [
           {
             "result": {
-              "duration": 136194000,
+              "duration": 205248000,
               "status": "passed"
             },
             "match": {
@@ -317,7 +350,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1186298000,
+              "duration": 1064245000,
               "status": "passed"
             },
             "line": 4,
@@ -329,7 +362,7 @@
           },
           {
             "result": {
-              "duration": 3151656000,
+              "duration": 3138761000,
               "status": "passed"
             },
             "line": 5,
@@ -341,7 +374,7 @@
           },
           {
             "result": {
-              "duration": 163647000,
+              "duration": 157172000,
               "status": "passed"
             },
             "line": 6,
@@ -353,7 +386,7 @@
           },
           {
             "result": {
-              "duration": 178862000,
+              "duration": 225294000,
               "status": "passed"
             },
             "line": 7,
@@ -365,6 +398,9 @@
           }
         ],
         "tags": [
+          {
+            "name": "@wip"
+          },
           {
             "name": "@hoverOver"
           }
@@ -378,11 +414,19 @@
     "uri": "file:src/test/resources/features/hoverOver.feature",
     "tags": [
       {
-        "name": "@hoverOver",
+        "name": "@wip",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "@hoverOver",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 6
         }
       }
     ]
@@ -391,11 +435,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-08-15T13:05:48.081Z",
+        "start_timestamp": "2021-08-15T19:40:01.642Z",
         "before": [
           {
             "result": {
-              "duration": 2263136000,
+              "duration": 1806285000,
               "status": "passed"
             },
             "match": {
@@ -410,7 +454,7 @@
         "after": [
           {
             "result": {
-              "duration": 152367000,
+              "duration": 121038000,
               "status": "passed"
             },
             "match": {
@@ -423,7 +467,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1236619000,
+              "duration": 1135507000,
               "status": "passed"
             },
             "line": 4,
@@ -435,7 +479,7 @@
           },
           {
             "result": {
-              "duration": 80838000,
+              "duration": 65170000,
               "status": "passed"
             },
             "line": 5,
@@ -447,7 +491,7 @@
           },
           {
             "result": {
-              "duration": 94601000,
+              "duration": 72894000,
               "status": "passed"
             },
             "line": 6,
@@ -459,6 +503,9 @@
           }
         ],
         "tags": [
+          {
+            "name": "@wip"
+          },
           {
             "name": "@closeModals"
           }
@@ -472,24 +519,32 @@
     "uri": "file:src/test/resources/features/modals.feature",
     "tags": [
       {
-        "name": "@closeModals",
+        "name": "@wip",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
         }
+      },
+      {
+        "name": "@closeModals",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 6
+        }
       }
     ]
   },
   {
-    "line": 2,
+    "line": 3,
     "elements": [
       {
-        "start_timestamp": "2021-08-15T13:05:51.942Z",
+        "start_timestamp": "2021-08-15T19:40:04.919Z",
         "before": [
           {
             "result": {
-              "duration": 2311632000,
+              "duration": 1968948000,
               "status": "passed"
             },
             "match": {
@@ -497,14 +552,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "User should be able to submit information",
+        "line": 11,
+        "name": "user should be able enter valid details",
         "description": "",
-        "id": "submitting-form;user-should-be-able-to-submit-information",
+        "id": "submitting-form;user-should-be-able-enter-valid-details;;2",
         "after": [
           {
             "result": {
-              "duration": 135424000,
+              "duration": 159196000,
               "status": "passed"
             },
             "match": {
@@ -513,14 +568,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2348672000,
+              "duration": 1133260000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 6,
             "name": "user is on the provided page",
             "match": {
               "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_is_on_the_provided_page()"
@@ -529,25 +584,47 @@
           },
           {
             "result": {
-              "duration": 10785433000,
+              "duration": 7975486000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "user enter details",
+            "line": 7,
+            "name": "user enters \"Emily\" \"Ross\" \"emilyr@gmail.com\" \"Female\" \"1345765432\" and other details",
             "match": {
-              "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_enter_details()"
+              "arguments": [
+                {
+                  "val": "\"Emily\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Ross\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"emilyr@gmail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Female\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"1345765432\"",
+                  "offset": 55
+                }
+              ],
+              "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_enters_valid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 35768000,
+              "duration": 33979000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user should be able to submit form",
+            "line": 8,
+            "name": "user should be able to see submitted form",
             "match": {
-              "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_should_be_able_to_submit_form()"
+              "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_should_be_able_to_see_submitted_form()"
             },
             "keyword": "Then "
           }
@@ -555,6 +632,405 @@
         "tags": [
           {
             "name": "@wip"
+          },
+          {
+            "name": "@submitForm"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-15T19:40:16.208Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1994179000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.demoqa.stepDefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "user should be able enter valid details",
+        "description": "",
+        "id": "submitting-form;user-should-be-able-enter-valid-details;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 134492000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.demoqa.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1143244000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on the provided page",
+            "match": {
+              "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_is_on_the_provided_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7672593000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters \"Tom\" \"Riddle\" \"triddle@hotmail.com\" \"Male\" \"2763454329\" and other details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tom\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Riddle\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"triddle@hotmail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"Male\"",
+                  "offset": 49
+                },
+                {
+                  "val": "\"2763454329\"",
+                  "offset": 56
+                }
+              ],
+              "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_enters_valid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38500000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should be able to see submitted form",
+            "match": {
+              "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_should_be_able_to_see_submitted_form()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          },
+          {
+            "name": "@submitForm"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-15T19:40:27.199Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1784191000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.demoqa.stepDefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "negative scenario with invalid credentials",
+        "description": "",
+        "id": "submitting-form;negative-scenario-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 134719000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.demoqa.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2008132000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user is on the provided page",
+            "match": {
+              "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_is_on_the_provided_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8209519000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enters \"\" \"\" \"ywery@jsdj.com\" \"Other\" \"2665345543\" and other details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"ywery@jsdj.com\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Other\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"2665345543\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_enters_valid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 82448000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user should not be able to see submit the form",
+            "match": {
+              "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_should_not_be_able_to_see_submit_the_form()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          },
+          {
+            "name": "@submitForm"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-15T19:40:39.445Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2265253000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.demoqa.stepDefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "negative scenario with invalid credentials",
+        "description": "",
+        "id": "submitting-form;negative-scenario-with-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 151604000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.demoqa.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1442668000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user is on the provided page",
+            "match": {
+              "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_is_on_the_provided_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7799250000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enters \"253456\" \"264655\" \"abc@a.com\" \"\" \"2763454329\" and other details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"253456\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"264655\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"abc@a.com\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"2763454329\"",
+                  "offset": 45
+                }
+              ],
+              "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_enters_valid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 85964000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user should not be able to see submit the form",
+            "match": {
+              "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_should_not_be_able_to_see_submit_the_form()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          },
+          {
+            "name": "@submitForm"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-15T19:40:51.200Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1980610000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.demoqa.stepDefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "negative scenario with invalid credentials",
+        "description": "",
+        "id": "submitting-form;negative-scenario-with-invalid-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 221276000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.demoqa.stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1316767000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user is on the provided page",
+            "match": {
+              "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_is_on_the_provided_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7536281000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enters \"\" \"\" \"\" \"\" \"\" and other details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_enters_valid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 79213000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user should not be able to see submit the form",
+            "match": {
+              "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_should_not_be_able_to_see_submit_the_form()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          },
+          {
+            "name": "@submitForm"
           }
         ]
       }
@@ -569,8 +1045,16 @@
         "name": "@wip",
         "type": "Tag",
         "location": {
-          "line": 1,
+          "line": 2,
           "column": 1
+        }
+      },
+      {
+        "name": "@submitForm",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 6
         }
       }
     ]

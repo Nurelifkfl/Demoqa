@@ -6,8 +6,10 @@ import com.demoqa.utilities.browserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 
 public class acceptAlertStepDef {
@@ -21,16 +23,25 @@ public class acceptAlertStepDef {
     public void user_click_the_second_button() {
         WebElement alertButton = Driver.get().findElement(By.xpath("//*[@id='timerAlertButton']"));
        alertButton.click();
-        browserUtils.waitFor(5);
+
 
     }
 
     @Then("user should be able to accept alert")
     public void user_should_be_able_to_accept_alert() {
 
-        Alert alert=Driver.get().switchTo().alert();
-        alert.accept();
 
+        try {
+
+            browserUtils.waitFor(5);
+
+        } catch (NoSuchElementException e) {
+            Alert alert=Driver.get().switchTo().alert();
+            alert.accept();
+        }
+
+        browserUtils.waitFor(3);
+    }
     }
 
-}
+

@@ -5,6 +5,9 @@ formatter.feature({
   "keyword": "Feature",
   "tags": [
     {
+      "name": "@wip"
+    },
+    {
       "name": "@alert"
     }
   ]
@@ -14,6 +17,9 @@ formatter.scenario({
   "description": "",
   "keyword": "Scenario",
   "tags": [
+    {
+      "name": "@wip"
+    },
     {
       "name": "@alert"
     }
@@ -62,6 +68,9 @@ formatter.feature({
   "keyword": "Feature",
   "tags": [
     {
+      "name": "@wip"
+    },
+    {
       "name": "@datePicker"
     }
   ]
@@ -71,6 +80,9 @@ formatter.scenario({
   "description": "",
   "keyword": "Scenario",
   "tags": [
+    {
+      "name": "@wip"
+    },
     {
       "name": "@datePicker"
     }
@@ -119,6 +131,9 @@ formatter.feature({
   "keyword": "Feature",
   "tags": [
     {
+      "name": "@wip"
+    },
+    {
       "name": "@dragAndDrop"
     }
   ]
@@ -128,6 +143,9 @@ formatter.scenario({
   "description": "",
   "keyword": "Scenario",
   "tags": [
+    {
+      "name": "@wip"
+    },
     {
       "name": "@dragAndDrop"
     }
@@ -176,6 +194,9 @@ formatter.feature({
   "keyword": "Feature",
   "tags": [
     {
+      "name": "@wip"
+    },
+    {
       "name": "@hoverOver"
     }
   ]
@@ -185,6 +206,9 @@ formatter.scenario({
   "description": "",
   "keyword": "Scenario",
   "tags": [
+    {
+      "name": "@wip"
+    },
     {
       "name": "@hoverOver"
     }
@@ -243,6 +267,9 @@ formatter.feature({
   "keyword": "Feature",
   "tags": [
     {
+      "name": "@wip"
+    },
+    {
       "name": "@closeModals"
     }
   ]
@@ -252,6 +279,9 @@ formatter.scenario({
   "description": "",
   "keyword": "Scenario",
   "tags": [
+    {
+      "name": "@wip"
+    },
     {
       "name": "@closeModals"
     }
@@ -301,16 +331,73 @@ formatter.feature({
   "tags": [
     {
       "name": "@wip"
+    },
+    {
+      "name": "@submitForm"
+    }
+  ]
+});
+formatter.scenarioOutline({
+  "name": "user should be able enter valid details",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "user is on the provided page",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "user enters \"\u003cfirstName\u003e\" \"\u003clastName\u003e\" \"\u003cemail\u003e\" \"\u003cgender\u003e\" \"\u003cmobileNumber\u003e\" and other details",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "user should be able to see submitted form",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "firstName",
+        "lastName",
+        "email",
+        "gender",
+        "mobileNumber"
+      ]
+    },
+    {
+      "cells": [
+        "Emily",
+        "Ross",
+        "emilyr@gmail.com",
+        "Female",
+        "1345765432"
+      ]
+    },
+    {
+      "cells": [
+        "Tom",
+        "Riddle",
+        "triddle@hotmail.com",
+        "Male",
+        "2763454329"
+      ]
     }
   ]
 });
 formatter.scenario({
-  "name": "User should be able to submit information",
+  "name": "user should be able enter valid details",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
   "tags": [
     {
       "name": "@wip"
+    },
+    {
+      "name": "@submitForm"
     }
   ]
 });
@@ -328,21 +415,277 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enter details",
+  "name": "user enters \"Emily\" \"Ross\" \"emilyr@gmail.com\" \"Female\" \"1345765432\" and other details",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_enter_details()"
+  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_enters_valid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user should be able to submit form",
+  "name": "user should be able to see submitted form",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_should_be_able_to_submit_form()"
+  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_should_be_able_to_see_submitted_form()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "user should be able enter valid details",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@wip"
+    },
+    {
+      "name": "@submitForm"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on the provided page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_is_on_the_provided_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters \"Tom\" \"Riddle\" \"triddle@hotmail.com\" \"Male\" \"2763454329\" and other details",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_enters_valid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should be able to see submitted form",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_should_be_able_to_see_submitted_form()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "name": "negative scenario with invalid credentials",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "user is on the provided page",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "user enters \"\u003cfirstName\u003e\" \"\u003clastName\u003e\" \"\u003cemail\u003e\" \"\u003cgender\u003e\" \"\u003cmobileNumber\u003e\" and other details",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "user should not be able to see submit the form",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "firstName",
+        "lastName",
+        "email",
+        "gender",
+        "mobileNumber"
+      ]
+    },
+    {
+      "cells": [
+        "",
+        "",
+        "ywery@jsdj.com",
+        "Other",
+        "2665345543"
+      ]
+    },
+    {
+      "cells": [
+        "253456",
+        "264655",
+        "abc@a.com",
+        "",
+        "2763454329"
+      ]
+    },
+    {
+      "cells": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "negative scenario with invalid credentials",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@wip"
+    },
+    {
+      "name": "@submitForm"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on the provided page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_is_on_the_provided_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters \"\" \"\" \"ywery@jsdj.com\" \"Other\" \"2665345543\" and other details",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_enters_valid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should not be able to see submit the form",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_should_not_be_able_to_see_submit_the_form()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "negative scenario with invalid credentials",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@wip"
+    },
+    {
+      "name": "@submitForm"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on the provided page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_is_on_the_provided_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters \"253456\" \"264655\" \"abc@a.com\" \"\" \"2763454329\" and other details",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_enters_valid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should not be able to see submit the form",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_should_not_be_able_to_see_submit_the_form()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "negative scenario with invalid credentials",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@wip"
+    },
+    {
+      "name": "@submitForm"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on the provided page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_is_on_the_provided_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters \"\" \"\" \"\" \"\" \"\" and other details",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_enters_valid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should not be able to see submit the form",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.demoqa.stepDefinitions.submitFormStepDef.user_should_not_be_able_to_see_submit_the_form()"
 });
 formatter.result({
   "status": "passed"
