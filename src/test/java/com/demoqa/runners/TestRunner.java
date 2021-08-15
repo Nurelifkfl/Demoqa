@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/demoqa/stepDefinitions",
         dryRun = false,
-        tags = "@datePicker"
+        tags = ""
 
 )
 public class TestRunner {

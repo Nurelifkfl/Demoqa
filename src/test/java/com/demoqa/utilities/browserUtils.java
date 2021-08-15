@@ -51,20 +51,49 @@ public class browserUtils {
         ((JavascriptExecutor) Driver.get()).executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
-    public static String getCurrentDay() {
-        //Create a Calendar Object
-        Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
-        //Get Current Day as a number
-        int todayInt = calendar.get(Calendar.DAY_OF_MONTH);
-        //Integer to String Conversion
-        String todayStr = Integer.toString(todayInt);
+//    public static String getCurrentDay() {
+//        //Create a Calendar Object
+//        Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
+//        //Get Current Day as a number
+//        int todayInt = calendar.get(Calendar.DAY_OF_MONTH);
+//        //Integer to String Conversion
+//        String todayStr = Integer.toString(todayInt);
+//
+//        int nextMonth=calendar.get(Calendar.MONTH)+1;
+//        int year=calendar.get(Calendar.YEAR);
+//
+//
+//
+//
+//        return nextMonth+"/"+todayStr+"/"+year;
+//}
+//
+//public static String setDatePicker(){
+//        Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
+//        int month= calendar.get(Calendar.MONTH);
+//        int day=calendar.get(Calendar.DAY_OF_MONTH);
+//        int year=calendar.get(Calendar.YEAR);
+//
+//        return (month+1)+"/"+day+
+//
+//}
 
-        int nextMonth=calendar.get(Calendar.MONTH);
-        int year=calendar.get(Calendar.YEAR);
+    public static String chooseNextMonth(String date){
+        String newDate;
+        String month = date.substring(0,2);
+        String day = date.substring(3,5);
+        String year = date.substring(6,10);
+        if(month.equals("12")){
+            int nextYear = (Integer.parseInt(year)+1);
+            year = String.valueOf(nextYear);
+            month="1";
+        }else{
+            int nextMonth=(Integer.parseInt(month)+1);
+            month = String.valueOf(nextMonth);
 
+        }
+        newDate= month+"/"+day+"/"+year;
+        return newDate;
 
-        return nextMonth+"/"+todayStr+"/"+year;
-}
-
-
+    }
 }

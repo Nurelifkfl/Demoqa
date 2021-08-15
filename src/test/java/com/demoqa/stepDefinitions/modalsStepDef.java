@@ -2,9 +2,11 @@ package com.demoqa.stepDefinitions;
 
 import com.demoqa.utilities.ConfigurationReader;
 import com.demoqa.utilities.Driver;
+import com.demoqa.utilities.browserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -22,7 +24,17 @@ public class modalsStepDef {
 
     @Then("user should be able to close modal")
     public void user_should_be_able_to_close_modal() {
-       WebElement closeModal=Driver.get().findElement(By.id("closeSmallModal"));
-       closeModal.click();
+
+        int windowCount = Driver.get().getWindowHandles().size();
+        WebElement closeModal=Driver.get().findElement(By.id("closeSmallModal"));
+
+        WebElement modalMessage=Driver.get().findElement(By.className("modal-body"));
+        System.out.println("modalMessage.getText() = " + modalMessage.getText());
+
+        closeModal.click();
+
+        System.out.println("windowCount = " + windowCount);
+        Assert.assertEquals(windowCount, Driver.get().getWindowHandles().size());
+
     }
 }
