@@ -24,5 +24,5 @@
 2-) Second type of report, the project is run from **TestRunner** class, a Cucumber Report link is created in the IDE console automatically.(In project report 31 steps passed)
 
 ###EXPLANATION ABOUT SOME SCENARIOS
-- I consider all the possibilities about given credentials. In submitting form scenario there are some inputs that we need to enter some details. But firstname and last name input accept spaces.It doesn't give us any error it actually accept.This can be considered as a bug.Because we need to enter valid credentials.
+- I consider all the possibilities about given credentials. In submitting form scenario there are some inputs that we need to enter some details. But firstname and last name input accept spaces and numbers.It doesn't give us any error it actually accept.This can be considered as a bug.Because we need to enter valid credentials, not only space or not only numbers.
 
