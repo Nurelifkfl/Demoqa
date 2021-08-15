@@ -26,3 +26,13 @@
 ###EXPLANATION ABOUT SOME SCENARIOS
 - I consider all the possibilities about given credentials. In submitting form scenario there are some inputs that we need to enter some details. But firstname and last name input accept spaces and numbers.It doesn't give us any error it actually accept.This can be considered as a bug.Because we need to enter valid credentials, not only spaces or only numbers.
 
+
+
+**Nur Elif Kafali**
+
+Software Development Engineer in Test
+
+https://www.linkedin.com/in/nurelifkafali/
+
+
+
