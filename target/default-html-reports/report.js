@@ -288,10 +288,8 @@ formatter.match({
   "location": "com.demoqa.stepDefinitions.modalsStepDef.user_should_be_able_to_close_modal()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertFalse(Assert.java:65)\n\tat org.junit.Assert.assertFalse(Assert.java:75)\n\tat com.demoqa.stepDefinitions.modalsStepDef.user_should_be_able_to_close_modal(modalsStepDef.java:35)\n\tat ✽.user should be able to close modal(file:///Users/nurelifkafali/Desktop/Demoqa/src/test/resources/features/modals.feature:6)\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });

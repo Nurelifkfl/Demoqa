@@ -33,7 +33,6 @@ public class modalsStepDef {
 
         closeModal.click();
 
-        System.out.println("windowCount = " + windowCount);
         Assert.assertEquals(windowCount, Driver.get().getWindowHandles().size());
 
     }
