@@ -7,6 +7,10 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.TimeZone;
+
 public class browserUtils {
     public static void waitFor(int seconds) {
         try {
@@ -46,4 +50,21 @@ public class browserUtils {
     public static void scrollToElement(WebElement element) {
         ((JavascriptExecutor) Driver.get()).executeScript("arguments[0].scrollIntoView(true);", element);
     }
+
+    public static String getCurrentDay() {
+        //Create a Calendar Object
+        Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
+        //Get Current Day as a number
+        int todayInt = calendar.get(Calendar.DAY_OF_MONTH);
+        //Integer to String Conversion
+        String todayStr = Integer.toString(todayInt);
+
+        int nextMonth=calendar.get(Calendar.MONTH);
+        int year=calendar.get(Calendar.YEAR);
+
+
+        return nextMonth+"/"+todayStr+"/"+year;
+}
+
+
 }

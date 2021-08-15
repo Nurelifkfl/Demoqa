@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-08-14T23:41:46.091Z",
+        "start_timestamp": "2021-08-15T11:09:04.005Z",
         "before": [
           {
             "result": {
-              "duration": 3970693000,
+              "duration": 3887922000,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 3,
-        "name": "User should be able to drag and drop the element",
+        "name": "User should be able to set the date from the date picker",
         "description": "",
-        "id": "drag-and-drop;user-should-be-able-to-drag-and-drop-the-element",
+        "id": "date-picker;user-should-be-able-to-set-the-date-from-the-date-picker",
         "after": [
           {
             "result": {
-              "duration": 172289000,
+              "duration": 203029000,
               "status": "passed"
             },
             "match": {
@@ -35,56 +35,56 @@
         "steps": [
           {
             "result": {
-              "duration": 1082615000,
+              "duration": 1352300000,
               "status": "passed"
             },
             "line": 4,
-            "name": "user is on the droppable page",
+            "name": "user is on the date-picker page",
             "match": {
-              "location": "com.demoqa.stepDefinitions.dragAndDropStepDef.user_is_on_the_droppable_page()"
+              "location": "com.demoqa.stepDefinitions.datePickerStepDef.user_is_on_the_date_picker_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 315952000,
+              "duration": 282291000,
               "status": "passed"
             },
             "line": 5,
-            "name": "user drag and drop the element into the specified area",
+            "name": "user select a date from date picker field",
             "match": {
-              "location": "com.demoqa.stepDefinitions.dragAndDropStepDef.user_drag_and_drop_the_element_into_the_specified_area()"
+              "location": "com.demoqa.stepDefinitions.datePickerStepDef.user_select_a_date_from_date_picker_field()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 638679000,
+              "duration": 755000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user should be able to drag and drop successfully",
+            "name": "user should be able to see one month from todays date",
             "match": {
-              "location": "com.demoqa.stepDefinitions.dragAndDropStepDef.user_should_be_able_to_drag_and_drop_successfully()"
+              "location": "com.demoqa.stepDefinitions.datePickerStepDef.user_should_be_able_to_see_one_month_from_todays_date()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@dragAndDrop"
+            "name": "@datePicker"
           }
         ]
       }
     ],
-    "name": "drag and drop",
+    "name": "date picker",
     "description": "",
-    "id": "drag-and-drop",
+    "id": "date-picker",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/dragAndDrop.feature",
+    "uri": "file:src/test/resources/features/datePicker.feature",
     "tags": [
       {
-        "name": "@dragAndDrop",
+        "name": "@datePicker",
         "type": "Tag",
         "location": {
           "line": 1,

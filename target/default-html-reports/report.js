@@ -1,21 +1,21 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/dragAndDrop.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/datePicker.feature");
 formatter.feature({
-  "name": "drag and drop",
+  "name": "date picker",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@dragAndDrop"
+      "name": "@datePicker"
     }
   ]
 });
 formatter.scenario({
-  "name": "User should be able to drag and drop the element",
+  "name": "User should be able to set the date from the date picker",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@dragAndDrop"
+      "name": "@datePicker"
     }
   ]
 });
@@ -23,31 +23,31 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user is on the droppable page",
+  "name": "user is on the date-picker page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.demoqa.stepDefinitions.dragAndDropStepDef.user_is_on_the_droppable_page()"
+  "location": "com.demoqa.stepDefinitions.datePickerStepDef.user_is_on_the_date_picker_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user drag and drop the element into the specified area",
+  "name": "user select a date from date picker field",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.demoqa.stepDefinitions.dragAndDropStepDef.user_drag_and_drop_the_element_into_the_specified_area()"
+  "location": "com.demoqa.stepDefinitions.datePickerStepDef.user_select_a_date_from_date_picker_field()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user should be able to drag and drop successfully",
+  "name": "user should be able to see one month from todays date",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.demoqa.stepDefinitions.dragAndDropStepDef.user_should_be_able_to_drag_and_drop_successfully()"
+  "location": "com.demoqa.stepDefinitions.datePickerStepDef.user_should_be_able_to_see_one_month_from_todays_date()"
 });
 formatter.result({
   "status": "passed"
